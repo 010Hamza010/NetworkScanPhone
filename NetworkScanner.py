@@ -90,7 +90,7 @@ if __name__ == '__main__':
 					mac = get_mac_address(ip=ip)
 
 					tried=0
-					while mac == '':
+					while str(type(mac)).split("'")[1] == 'NoneType':
 						if tried < 5:
 							tried+=1
 							mac = get_mac_address(ip=ip)

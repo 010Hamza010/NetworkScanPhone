@@ -76,8 +76,8 @@ if __name__ == '__main__':
 			if '192.168.1.1' not in ValidIp:
 				ValidIp.append('192.168.1.1')
 
-			print('There is {} device in the network'.format(len(ValidIp)))
-			Data.append('There is {} device in the network'.format(len(ValidIp)))
+			print('There is {} devices in the network'.format(len(ValidIp)))
+			Data.append('There is {} devices in the network'.format(len(ValidIp)))
 			for ip in sorted(ValidIp):
 				if errors < 5:
 					print('-'*6,ip,'-'*6)
@@ -116,8 +116,8 @@ if __name__ == '__main__':
 									print('[{}] Is open'.format(port))
 									Data.append('[{}] Is open'.format(port))
 							else:
-								print('All the port are closed')
-								Data.append('All the port are closed')
+								print('All the ports are closed')
+								Data.append('All the ports are closed')
 							break
 				else:
 					print('[!] Connection lost!')

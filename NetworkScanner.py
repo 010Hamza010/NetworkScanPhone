@@ -130,7 +130,7 @@ if __name__ == '__main__':
 
 			end = dt.today().strftime('%Y/%m/%d %X')
 			print('The script end at : {}'.format(end))
-			Data.append('The script end at : {}'.format(end))
+			Data.append('The script finish at : {}'.format(end))
 			#save the data
 			with open('NetworkScan-{}.txt'.format(PublicIp),'w') as file:
 				file.write('\n'.join(Data))
